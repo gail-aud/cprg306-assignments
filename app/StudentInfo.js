@@ -1,20 +1,14 @@
-import React from 'react';
-import Link from 'next/link';
+import Link from "next/link";
 
-function StudentInfo() {
-  return (
-    <div>
-      <h2>Your Name: Gail Audrey Javier</h2>
-      <p>Your Course Section: CPRG 306A</p>
-      <p>
-        <Link href="hhttps://github.com/gail-aud/cprg306-assignments">
-          <a target="_blank" rel="noopener noreferrer">
-            GitHub Repository
-          </a>
-        </Link>
-      </p>
-    </div>
-  );
-}
-
-export default StudentInfo;
+export default function StudentInfo() {
+    return (
+      <main>
+        <p className="text-sm">
+            Name: Gail Audrey Javier <br></br>
+            Course Section: CPRG 306A <br></br>
+    
+            <Link href={"https://github.com/gail-aud/cprg306-assignments"} className="hover:text-blue-200">Github Repository</Link>
+        </p>
+      </main>
+    );
+  }
