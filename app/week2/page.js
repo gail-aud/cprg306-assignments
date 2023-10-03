@@ -1,13 +1,11 @@
-import React from 'react';
-import StudentInfo from '../../StudentInfo'; 
+import StudentInfo from "./StudentInfo";
 
-function Week2Page() {
+export default function week2() {
+    
   return (
-    <div>
-      <h1>My Shopping List</h1> 
-      <StudentInfo /> 
-    </div>
-  );
-}
-
-export default Week2Page;
+      <main  className="flex min-h-screen flex-col items-center pt-24"> 
+        <h1 className="font=64">My Shopping List</h1>
+        <StudentInfo />
+      </main>
+    );
+  }

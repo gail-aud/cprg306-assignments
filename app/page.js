@@ -8,7 +8,9 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center pt-24">
       <h1 className="font:64">CPRG 306: Web Dev 2 - Assignments</h1>
       <StudentInfo />
-      <Link href={`/week2`} className="hover:text-blue-200 "> Week 2 </Link>
+      <Link href={`/week2`} className="hover:text-blue-200 text-sm "> Week 2 </Link>
+      <Link href={`/week3`} className="hover:text-blue-200 text-sm "> Week 3 </Link>
     </main>
   );
-}
+
+  }
