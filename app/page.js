@@ -1,5 +1,4 @@
 import StudentInfo from "./StudentInfo";
-import week2 from "./week2/page.js";
 import Link from "next/link";
 
 export default function Home() {
