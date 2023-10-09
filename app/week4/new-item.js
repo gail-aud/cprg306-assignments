@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useState } from "react";
 
@@ -29,7 +29,7 @@ export default function NewItem() {
                     <input
                         required
                         type="text"
-                        className="block w-full bg-white rounded py-2 px-4 mb-3 text-black placeholder:text-gray-500  focus:ring-blue-200 focus: ring-4"
+                        className="block w-full bg-white rounded py-2 px-4 mb-3 text-black placeholder:text-gray-500  focus:ring-blue-300 focus: ring-4"
                         placeholder="Enter item name"
                         value={name}
                         onChange={(event) => setName(event.target.value)}
@@ -38,7 +38,7 @@ export default function NewItem() {
                     <input
                         required
                         type="number"
-                        className="block w-full bg-white rounded py-2 px-4 mb-3 text-black  focus:ring-blue-200 focus: ring-4"
+                        className="block w-full bg-white rounded py-2 px-4 mb-3 text-black  focus:ring-blue-300 focus: ring-4"
                         min = "1"
                         max = "99"
                         value={quantity}
@@ -46,7 +46,7 @@ export default function NewItem() {
                     />
                     <label htmlFor="category">Category</label>
                     <select
-                        className="block w-full bg-white rounded py-2 px-4 mb-3 text-black focus:ring-blue-200 focus: ring-4"
+                        className="block w-full bg-white rounded py-2 px-4 mb-3 text-black focus:ring-blue-300 focus: ring-4"
                         value={category}
                         onChange={(event) => setCategory(event.target.value)}
                     >
@@ -62,7 +62,7 @@ export default function NewItem() {
                         <option value="HouseHold">HouseHold</option>    
                         <option value="other">Other</option>
                     </select>
-                    <button type="submit" className="w-full bg-blue-300 hover:bg-yellow-300 text-black font-bold py-2 px-4 rounded hover:text-white"
+                    <button type="submit" className="w-full bg-blue-300 hover:bg-blue-500 text-black font-bold py-2 px-4 rounded hover:text-white"
                     >Add Item</button>
                 </form>
             </div>

@@ -1,4 +1,4 @@
-import StudentInfo from "./StudentInfo";
+import StudentInfo from "../StudentInfo";
 import Link from "next/link";
 
 export default function Page() {
